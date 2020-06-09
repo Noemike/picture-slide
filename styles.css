@@ -1,0 +1,23 @@
+body {
+    background-color:rgb(181, 189, 185);
+    background-image: linear-gradient(to right, rgb(181, 189, 185) ,  rgb(145, 163, 154));
+}
+
+#photo {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left-arrow {
+    position: fixed;
+    left: 5%;
+    bottom: 50%;
+}
+
+#right-arrow {
+    position: fixed;
+    right: 5%;
+    bottom: 50%;
+}
