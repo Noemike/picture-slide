@@ -10,6 +10,15 @@ body {
     margin-right: auto;
 }
 
+.gray-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #left-arrow {
     position: fixed;
     left: 5%;
