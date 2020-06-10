@@ -1,32 +1,59 @@
 body {
     background-color:rgb(181, 189, 185);
     background-image: linear-gradient(to right, rgb(181, 189, 185) ,  rgb(145, 163, 154));
+    font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
-#photo {
+.container {
+    position: relative;
+}
+
+.gray-container {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: 0%;
+    background-color: rgb(180, 186, 190); opacity: 70%;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+#currentPhotoDescription, #currentPhotoTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainImg {
     display: flex;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    border-right: 200px solid whitesmoke;
+    border-left: 200px solid whitesmoke;
 }
 
-.gray-container {
+/*.gray-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
+    
     margin-left: auto;
     margin-right: auto;
-}
+    background-color: rgb(180, 186, 190);
+    border: 2px solid grey;
+    
+}*/
 
 #left-arrow {
     position: fixed;
-    left: 5%;
+    left: 11%;
     bottom: 50%;
 }
 
 #right-arrow {
     position: fixed;
-    right: 5%;
+    right: 11%;
     bottom: 50%;
 }
