@@ -6,9 +6,10 @@ body {
 
 .container {
     position: relative;
+    margin-bottom: 1%;
 }
 
-.gray-container {
+.grey-container {
     position: absolute;
     width: 50%;
     left: 25%;
@@ -16,6 +17,24 @@ body {
     background-color: rgb(180, 186, 190); opacity: 70%;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
+}
+
+.thumbnail-container {
+    width: 80%;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thumbnail {
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    ;
 }
 
 #currentPhotoDescription, #currentPhotoTitle {

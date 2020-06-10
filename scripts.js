@@ -4,9 +4,6 @@
     description: 'This is how he slept at one month old',
 };*/
 
-
-
-
 let imagesData = {
     photo: ['1month.jpg', '3month.jpg', '6month.jpg', '10month.jpg', '1yr.jpg'],
     title: ['One month old Levi', 'Three months old Levi', 'Six months old Levi', 'Ten months old Levi', 'One year old Levi'],
@@ -28,8 +25,6 @@ $('#photo-description').text(data.description);*/
 let loadPhoto = (photoNumber) => {
 
     $('#mainImg').attr('src', imagesData.photo[currentPhoto]);
-   // $('#mainImg').css('border', 'solid 2px grey');
-   // $('#mainImg').css('box-shadow', '5 5 50px #fff');
     $('#currentPhotoTitle').text(imagesData.title[currentPhotoTitle]);
     $('#currentPhotoDescription').text(imagesData.description[currentPhotoDescription]);
 }
@@ -53,3 +48,13 @@ $('#left-arrow').click(() => {
     }
     loadPhoto(currentPhoto);
 });
+
+for(let i = 1; i <= imagesData.photo.length; i++) {
+    let numberIndex = parseInt(currentPhoto+1);
+
+    $('.thumbnail-container').append('<div class="thumbnail"><img src="'+i+'.jpg" class="thumbnailImg"><div class="hiddenThumbnailTitle"></div></div>');  
+    $('.thumbnail[src="'+numberIndex+'.jpg"]').css('border', 'solid 2px white');
+    $('.thumbnail[src="'+numberIndex+'.jpg"]').css('box-shadow', '0 0 50px #fff');
+}
+    
+    
