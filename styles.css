@@ -28,13 +28,14 @@ body {
     margin-right: auto;
 }
 
-.thumbnail {
+.thumbnail-container img {
     border: 2px solid whitesmoke;
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    ;
+    height:50px;
+    width:50px;
 }
 
 #currentPhotoDescription, #currentPhotoTitle {
