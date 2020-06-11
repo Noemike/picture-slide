@@ -49,7 +49,7 @@ $('#left-arrow').click(() => {
     loadPhoto(currentPhoto);
 });
 
-for(let i = 1; i <= imagesData.photo.length; i++) {
+/*for(let i = 1; i <= imagesData.photo.length; i++) {
     let numberIndex = parseInt(currentPhoto+1);
 
     $('.thumbnail-container').append('<div class="thumbnail"><img src="'+i+'.jpg" class="thumbnailImg"><div class="hiddenThumbnailTitle"></div></div>');  
@@ -57,4 +57,12 @@ for(let i = 1; i <= imagesData.photo.length; i++) {
     $('.thumbnail[src="'+numberIndex+'.jpg"]').css('box-shadow', '0 0 50px #fff');
 }
     
-    
+  let data = ['first', 'second', 'third', 'fourth', 'fifth'] ;
+
+  data.forEach ((item, index) => {
+      $('.thumbnail-container').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
+      $('.box').click((event) => {
+        let indexClicked = $(event.target).attr('data-index');
+    }
+  
+  );*/
