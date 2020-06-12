@@ -77,3 +77,25 @@ body {
     right: 11%;
     bottom: 50%;
 }
+
+.thumbnail {
+    margin-top: 60px;
+    width: 100px;
+    height: 100px;
+    
+    position: relative;
+  }
+  
+  .title {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: -50px;
+  }
+  
+  .thumbnail:hover .title {
+    display: block;
+  }

@@ -44,7 +44,12 @@ let loadPhoto = (photoNumber) => {
 loadPhoto(currentPhoto)
 
 imagesData.forEach((thumbnail, index) => {
-    $(".thumbnail-container").append(`<img onclick="loadPhoto(${index})" src="${thumbnail.photo}"/>`)
+    let thumbnailHtml = `<div class="thumbnail">
+    <img onclick="loadPhoto(${index})" src="${thumbnail.photo}">
+    <div class="title"> ${thumbnail.title} </div>
+    </div>`
+
+    $(".thumbnail-container").append(thumbnailHtml)
 });
 
 
