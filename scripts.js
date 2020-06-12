@@ -45,8 +45,10 @@ loadPhoto(currentPhoto)
 
 imagesData.forEach((thumbnail, index) => {
     $(".thumbnail-container").append(`<img onclick="loadPhoto(${index})" src="${thumbnail.photo}"/>`)
-
 });
+
+
+
 
 $('#right-arrow').click(() => {
     if (currentPhoto < 5) {
